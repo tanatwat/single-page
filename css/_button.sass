@@ -36,3 +36,63 @@ button.btn
         color: map-get($btn-active-color, submit)
         background-color: map-get($btn-active-bg, submit)
         border-color: map-get($btn-border-color-active, submit)
+
+//Social network button 
+
+.social-btn
+  display: block
+  height: 40px
+  color: #fff
+  padding: 0 10px
+  border-radius: 8px
+  box-shadow: none
+  font
+    display: inline-block
+    vertical-align: text-top
+  i
+    line-height: 40px !important
+    font-size: 1.5rem
+  &.messenger
+    position: fixed
+    bottom: 15px
+    right: 15px
+    background: #3283ff
+    border: 1px solid #4f89e2
+    &:hover
+      color: #3283ff
+      border-color: #3283ff
+  &.line
+    background: #39b900
+    border: 1px solid #39b900
+    &:hover
+      color: #39b900
+      border-color: #39b900
+  &.facebook
+    background: #3b5998
+    border: 1px solid #3b5998
+    &:hover
+      color: #3b5998
+      border-color: #3b5998
+  &.info
+    background: #4aa0a7
+    border: 1px solid #4aa0a7
+    &:hover
+      color: #4aa0a7
+      border-color: #4aa0a7
+
+.social-btn:hover
+  background: #fff
+  box-shadow: none
+  transition: all .3s ease
+
+@media (min-width: 768px)
+  .social-btn
+    &.messenger
+      bottom: 30px
+      right: 30px
+
+@media (min-width: 1200px)
+  .social-btn
+    &.messenger
+      bottom: 30px
+      right: 50px
