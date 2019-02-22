@@ -1,11 +1,11 @@
-$footer-bg: #86692d
-$footer-font-color: #fff
-$footer-font-size: teal
+$footer-bg: #f2f2f2
+$footer-font-color: #6c6c6c
+$footer-font-size: 1rem
 $footer-padding: 25px 20px
 
-$footer-link-color: #fff
+$footer-link-color: #6c6c6c
 $footer-link-decoration: none
-$footer-link-hover: red
+$footer-link-hover: #777
 
 footer
   position: relative
@@ -19,8 +19,11 @@ footer
     &:hover
       color: $footer-link-hover
       text-decoration: $footer-link-decoration
-  i::before, a::before
+  .fas::before
     font-size: 1.2rem
+    margin-right: 8px
+  .fab::before
+    font-size: 1.5rem
     margin-right: 8px
 
 .legal

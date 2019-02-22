@@ -28,13 +28,11 @@
   <div class="mobile-menu" v-show="menuToggle">
     <ul>
       <li><a href="/">หน้าแรก</a></li>
-      <li class="dropdown"><a :class="{'active' : dropdown == 1}" @click.prevent="toggleDropdown(1)">สินค้า</a></li>
-      <transition name="height" mode="out-in">
-        <div class="mobile-dropdown" v-show="dropdown == 1">
+      <li class="dropdown"><a :class="{'active' : dropdownMobile == 1}" @click.prevent="toggleDropdownMobile(1)">สินค้า</a></li>
+        <div class="mobile-dropdown" v-show="dropdownMobile == 1">
           <li><a href="#">dropdown</a></li>
           <li><a href="#">dropdown</a></li>
         </div>
-      </transition>
       <li><a href="/about">เกี่ยวกับเรา</a></li>
       <li><a href="/contact">ติดต่อเรา</a></li>
     </ul>

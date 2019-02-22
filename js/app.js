@@ -12,25 +12,33 @@ window.document.addEventListener("DOMContentLoaded", function() {
     mixins: [clickaway, smoothReflow],
     data() {
       return {
-        dropdown: false,
-        dropdownMobile: false,
+        dropdown: null,
+        dropdownMobile: null,
         menuToggle: false,
         banners: ['#', '#']
       };
     },
     methods: {
       toggleDropdown(id) {
-        // Vanilla version
         if (id) {
           if (id === this.dropdown) {
             this.dropdown = null
           } else {
             this.dropdown = id
           }
-        } else {',
-      })
-    },
+        } else {
           this.dropdown = null
+        }
+      },
+      toggleDropdownMobile(id) {
+        if (id) {
+          if (id === this.dropdownMobile) {
+            this.dropdownMobile = null
+          } else {
+            this.dropdownMobile = id
+          }
+        } else {
+          this.dropdownMobile = null
         }
       },
       closeDropdown() {
