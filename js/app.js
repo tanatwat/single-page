@@ -4,6 +4,22 @@ import {
 } from 'vue-clickaway';
 import smoothReflow from 'vue-smooth-reflow';
 
+import VueScrollTo from 'vue-scrollto';
+
+Vue.use(VueScrollTo, {
+     container: "body",
+     duration: 200,
+     easing: "ease",
+     offset: -50,
+     force: true,
+     cancelable: true,
+     onStart: false,
+     onDone: false,
+     onCancel: false,
+     x: false,
+     y: true
+ })
+
 import AOS from 'aos';
 
 window.document.addEventListener("DOMContentLoaded", function() {
